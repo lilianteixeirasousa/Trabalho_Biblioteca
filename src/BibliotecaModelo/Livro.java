@@ -62,7 +62,7 @@ public class Livro implements IObjeto{
     }
 
      /*
-    * Método que verifica se o exemplar está disponível.
+    * Método que verifica se o exemplar nõ está reservado.
     * */
     public boolean exemplarNaoReservado(){
         int livre = 0;
