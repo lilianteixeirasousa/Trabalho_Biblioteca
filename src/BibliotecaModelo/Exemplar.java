@@ -1,8 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+* Classe de Definição de um Exemplar de um Livro.
+* */
 package BibliotecaModelo;
 
 import java.text.SimpleDateFormat;
@@ -21,7 +19,8 @@ public class Exemplar {
         this.livro = livro;
         this.emprestimo = null;
     }
-    
+    * Método público que verifica se o Exemplar está disponível.
+    * */
     public boolean estaDisponivel(){
         return (emprestimo==null);
     }
