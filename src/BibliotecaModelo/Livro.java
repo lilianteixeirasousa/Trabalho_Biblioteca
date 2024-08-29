@@ -1,8 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+* Classe de Definição do Livro
+* */
+
 package BibliotecaModelo;
 
 import UsuarioModelo.IObservador;
@@ -44,18 +43,27 @@ public class Livro implements IObjeto{
     public String getTitulo() {
         return titulo;
     }
-    
+
+      /*
+    * Método que adiciona um exemplar na lista de exemplares.
+    * */
     public void adicionarExemplar(Exemplar e){
         exemplares.add(e);
     }
-    
+
+     /*
+    * Método para pegar o exemplar que estiver disponível.
+    * */
     public Exemplar pegarExemplarDisponivel(){
         for (Exemplar e: exemplares){
             if(e.estaDisponivel()){return e;}
         }
         return null;
     }
-    
+
+     /*
+    * Método que verifica se o exemplar está disponível.
+    * */
     public boolean exemplarNaoReservado(){
         int livre = 0;
         for (Exemplar e: exemplares){
@@ -63,21 +71,30 @@ public class Livro implements IObjeto{
         }
         return (livre>reservas.size());
     }
-    
+
+     /*
+    * Método que verifica se o usuário realizou reserva.
+    * */
     public boolean usuarioReservou(String codigoUsuario){
         for(Reserva r: reservas){
             if(r.codigoUsuario().equalsIgnoreCase(codigoUsuario)){return true;}
         }
         return false;
     }
-    
+
+     /*
+    * Método que adiciona reserva.
+    * */
     public void incluirReserva(Reserva r){
         reservas.add(r);
         if(reservas.size()==3){
             notificaObservadores();
         }
     }
-    
+
+     /*
+    * Método que cancela reserva.
+    * */
     public void consumirReserva(String codigoUsuario){
         for(Reserva r: reservas){
             if(r.codigoUsuario().equalsIgnoreCase(codigoUsuario)){
@@ -86,7 +103,10 @@ public class Livro implements IObjeto{
             }
         }
     }
-    
+
+     /*
+    * Métodos para consultar reservas.
+    * */
     public String consultar(){
         String texto = titulo+"("+codigo+")\n";
         texto+="RESERVAS: "+consultarReservas();
@@ -115,6 +135,9 @@ public class Livro implements IObjeto{
         return texto;
     }
 
+     /*
+    * Métodos vinculados ao padrão observer, registrando, removendo e notificando observadores.
+    * */
     @Override
     public void registraObservador(IObservador o) {
         inscritos.add(o);
