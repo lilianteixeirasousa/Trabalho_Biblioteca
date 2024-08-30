@@ -6,8 +6,7 @@ package BibliotecaModelo;
 import java.text.SimpleDateFormat;
 
 /**
- *
- * @author theou
+ * instancia
  */
 public class Exemplar {
     private String codigoExemplar;
@@ -19,11 +18,18 @@ public class Exemplar {
         this.livro = livro;
         this.emprestimo = null;
     }
+    /*
     * Método público que verifica se o Exemplar está disponível.
     * */
+    
     public boolean estaDisponivel(){
         return (emprestimo==null);
     }
+
+
+     /*
+    * Método público que empresta livro reservado.
+    * */
     
     public void emprestado(Emprestimo e){
         emprestimo = e;
@@ -37,10 +43,19 @@ public class Exemplar {
     public String tituloLivro(){
         return livro.getTitulo();
     }
+
+
+     /*
+    * Método público para encerrar emprestimo.
+    * */
     
     public void encerrarEmprestimo(){
         emprestimo = null;
     }
+
+     /*
+    * Método público que retorna a situação do Exemplar, se está disponível ou emprestado.
+    * */
     
     public String consultar(){
         if (emprestimo==null){
