@@ -1,15 +1,12 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Definição da classe Sair.
  */
 package Comando;
 
 import Sistema.Trabalhador;
 
 /**
- *
- * @author theou
+ * Implementa a interface IComando
  */
 public class Sair implements IComando {
 
