@@ -26,7 +26,9 @@ public class Emprestimo {
         c.add(Calendar.DATE, u.getLimiteDia());
         previsaoEntrega = c.getTime();
     }
-
+/**
+ Métodos para a definição da situação do empréstimo: se está em dia, qual a previsão de entrega, se foi devolvido, encerra e consulta.
+ */
   
     public boolean estaEmDia(Date hoje){
         return !(hoje.after(previsaoEntrega));
