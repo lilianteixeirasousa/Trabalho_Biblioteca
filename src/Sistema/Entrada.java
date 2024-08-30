@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Definição da classe Entrada
+ * Padrão Singleton.
  */
 package Sistema;
 
@@ -21,9 +20,9 @@ import java.util.HashMap;
 import static javafx.scene.input.KeyCode.T;
 
 /**
- *
- * @author theou
+ * Usa HashMap para mapear e inicia os comandos
  */
+
 public class Entrada {
     private static HashMap<String, IComando> comandos = new HashMap<String, IComando>();
     
