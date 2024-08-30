@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Definição da classe Consultar Notificações.
  */
 package Comando;
 
@@ -10,8 +8,7 @@ import Sistema.Trabalhador;
 import UsuarioModelo.IObservador;
 
 /**
- *
- * @author theou
+ * Implementa a interface IComando
  */
 public class ConsultarNotificacoes implements IComando{
 
