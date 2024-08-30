@@ -1,15 +1,14 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Definição da interface objeto
+ * Padrão Observer
  */
+
 package BibliotecaModelo;
 
 import UsuarioModelo.IObservador;
 
 /**
- *
- * @author theou
+ * métodos vazios de registrar, remover e notificar observadores.
  */
 public interface IObjeto {
   public void registraObservador(IObservador o);
