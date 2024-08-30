@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Definição da classe Repositório.
+ * Padrão Singleton.
  */
 package Sistema;
 
@@ -15,8 +14,7 @@ import UsuarioModelo.Usuario;
 import java.util.ArrayList;
 
 /**
- *
- * @author theou
+ * contém as listas de usuarios, livros, e observadores
  */
 public class Repositorio {
     
