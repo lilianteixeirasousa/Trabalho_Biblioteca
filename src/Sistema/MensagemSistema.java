@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Definição da classe MensagemUsuário.
  */
 package Sistema;
 
@@ -9,8 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- *
- * @author theou
+ * Contém os métodos que imprimem as mensagens do sistema.
  */
 public class MensagemSistema {
     
