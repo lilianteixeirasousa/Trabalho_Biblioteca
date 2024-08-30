@@ -1,13 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Definição da classe parâmetro.
  */
 package Comando;
 
 /**
- *
- * @author theou
+ * instancia 
  */
 public class Parametro {
     private String primeiroParametro;
