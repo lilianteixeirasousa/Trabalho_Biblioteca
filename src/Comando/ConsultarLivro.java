@@ -1,8 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Definição da classe ConsultarLivro.
  */
+
 package Comando;
 
 import BibliotecaModelo.Livro;
@@ -10,9 +9,9 @@ import Sistema.Repositorio;
 import Sistema.Trabalhador;
 
 /**
- *
- * @author theou
+ *implementa a interface IComando
  */
+
 public class ConsultarLivro implements IComando{
 
     @Override
