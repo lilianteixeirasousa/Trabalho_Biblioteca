@@ -4,7 +4,7 @@
 package Comando;
 
 /**
- * instancia 
+ * instancia os parâmetros para realizar as ações de devolução, empréstimo, reserva e registro de observadores.
  */
 public class Parametro {
     private String primeiroParametro;
