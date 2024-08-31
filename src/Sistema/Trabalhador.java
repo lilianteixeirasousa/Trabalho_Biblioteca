@@ -1,8 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Define classe trabalhador.
  */
+
 package Sistema;
 
 import BibliotecaModelo.Emprestimo;
@@ -13,16 +12,9 @@ import UsuarioModelo.IObservador;
 import UsuarioModelo.IRegra;
 import UsuarioModelo.Usuario;
 
-/**
- *
- * @author theou
- */
+
 public class Trabalhador {
-    
-    /** 
-    Esse mêtodo 
-     * @param user - 
-    */
+
     public static boolean reservarLivro(Usuario user, Livro livro){
         if(user.testarLimiteReserva()){
             MensagemSistema.limiteDeReservas(user.getNome(), livro.getTitulo());
