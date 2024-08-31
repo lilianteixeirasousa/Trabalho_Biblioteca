@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Classe que define as regras de empréstimo para o professor.
  */
 package UsuarioModelo;
 
@@ -10,10 +8,7 @@ import BibliotecaModelo.Exemplar;
 import BibliotecaModelo.Livro;
 import Sistema.MensagemSistema;
 
-/**
- *
- * @author theou
- */
+
 public class RegraProfessor implements IRegra{
 
     @Override
